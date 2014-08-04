@@ -1,6 +1,6 @@
 === Slug as body class ===
 Contributors: carloroosen, pilotessa
-Tags: count views, clickthrough rate
+Tags: url, slug, body, class
 Requires at least: 3.7
 Tested up to: 3.9
 Stable tag: 1.0
@@ -11,11 +11,21 @@ Show a counter above each post with number of displays and number of views
 
 == Description ==
 
-This plugin adds a unique class to to body tag of the html. The added class is formatted as "[post_type]-[slug]". For a page with slug "about" it will be "page-about", and for a post named "today" it will be "post-today". Currently no slug as added for archive and category pages. Please let us know what you need and we will add it.
+Want to have css styling rules for individual pages or posts?
+
+This plugin adds a unique class to the body tag of the html. The added class is formatted as "[post_type]-[post_name]". For a page with slug (= post_type) "about" it will be "page-about", and for a post named "today" it will be "post-today". Currently no slug will be added for archive and category pages. Please let us know if you need this and we will add it.
+
+= example =
+
+Say you want to have a red title on your contact page. With this plugin all you need to do is add this line to your css:
+
+body.page-contact h1 {
+	color : red;
+}
 
 == Installation ==
 
-In the WordPress backend, search for the plugin 'slug-as-body-class'. Once you found it, activate it and you are done. 
+In the WordPress backend, search for the plugin 'slug-as-body-class'. Install and activate it and you are done. 
 
 == Frequently Asked Questions ==
 
